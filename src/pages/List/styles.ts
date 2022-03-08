@@ -25,21 +25,20 @@ export const Filters = styled.div `
         &:hover {
             opacity: .7;
         }
+
+        ::after {
+            content: '';
+            display: block;
+            width: 55px;
+            margin: 0 auto;
+        }
     }
 
     .tag-filter-recurrent::after {
-        content: '';
-        display: block;
-        width: 55px;
-        margin: 0 auto;
         border-bottom: 7px solid ${props => props.theme.colors.warning};
     }
 
     .tag-filter-eventual::after {
-        content: '';
-        display: block;
-        width: 55px;
-        margin: 0 auto;
         border-bottom: 7px solid ${props => props.theme.colors.success};
     }
 `
